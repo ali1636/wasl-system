@@ -1,0 +1,18 @@
+# Wasl System — Client App Project
+
+This repository contains the **Wasl System** client project.  
+It includes documentation for the app and (future) source code.
+
+---
+
+## 📂 Files
+- `docs/wasl-system-project.docx` → Detailed project report  
+- `src/` → Source code folder (future use)  
+- `docs/` → Additional documentation
+
+---
+
+## 🚀 How to Use
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/ali1636/wasl-system.git
