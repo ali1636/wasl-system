@@ -1,11 +1,11 @@
 import React from 'react';
 import './Hero.css';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
     <section className="hero" id="home">
       <div className="hero-container">
-        {/* Content */}
         <div className="hero-content">
           <div className="hero-badge">
             <span>Secure • Reliable • Government Verified</span>
@@ -23,20 +23,14 @@ const Hero = () => {
           </p>
           
           <div className="hero-actions">
-            <a
-              className="cta-button primary"
-              href="https://github.com/ali1636/wasl-system"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View GitHub Repository
-            </a>
-            <button className="cta-button secondary">
-              Schedule a Demo
-            </button>
+            <Link to="/register" className="cta-button primary">
+              Get Started
+            </Link>
+            <Link to="/login" className="cta-button secondary">
+              Sign In
+            </Link>
           </div>
 
-          {/* Stats */}
           <div className="hero-stats">
             <div className="stat">
               <div className="stat-number">100%</div>
@@ -57,7 +51,6 @@ const Hero = () => {
           </div>
         </div>
         
-        {/* Visual Elements */}
         <div className="hero-visual">
           <div className="floating-card card-1">
             <div className="card-icon">👨‍👩‍👧‍👦</div>
@@ -80,11 +73,6 @@ const Hero = () => {
             <p>Absher integrated</p>
           </div>
         </div>
-      </div>
-      
-      {/* Scroll Indicator */}
-      <div className="scroll-indicator">
-        <div className="scroll-arrow"></div>
       </div>
     </section>
   );
